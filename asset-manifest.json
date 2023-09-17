@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/purple-giraffey.github.io/static/css/main.073c9b0a.css",
-    "main.js": "/purple-giraffey.github.io/static/js/main.5dd76532.js",
-    "static/js/787.ecf9c196.chunk.js": "/purple-giraffey.github.io/static/js/787.ecf9c196.chunk.js",
-    "static/media/lunar-tear-loading.png": "/purple-giraffey.github.io/static/media/lunar-tear-loading.c95ebf27057a97088245.png",
-    "index.html": "/purple-giraffey.github.io/index.html",
-    "main.073c9b0a.css.map": "/purple-giraffey.github.io/static/css/main.073c9b0a.css.map",
-    "main.5dd76532.js.map": "/purple-giraffey.github.io/static/js/main.5dd76532.js.map",
-    "787.ecf9c196.chunk.js.map": "/purple-giraffey.github.io/static/js/787.ecf9c196.chunk.js.map"
+    "main.css": "/wedding-invite/static/css/main.073c9b0a.css",
+    "main.js": "/wedding-invite/static/js/main.78c8ca93.js",
+    "static/js/787.ecf9c196.chunk.js": "/wedding-invite/static/js/787.ecf9c196.chunk.js",
+    "static/media/lunar-tear-loading.png": "/wedding-invite/static/media/lunar-tear-loading.c95ebf27057a97088245.png",
+    "index.html": "/wedding-invite/index.html",
+    "main.073c9b0a.css.map": "/wedding-invite/static/css/main.073c9b0a.css.map",
+    "main.78c8ca93.js.map": "/wedding-invite/static/js/main.78c8ca93.js.map",
+    "787.ecf9c196.chunk.js.map": "/wedding-invite/static/js/787.ecf9c196.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5dd76532.js"
+    "static/js/main.78c8ca93.js"
   ]
 }
