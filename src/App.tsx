@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './assets/lunar-tear-loading.png';
 import './App.css';
 
