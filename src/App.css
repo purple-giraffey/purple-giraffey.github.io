@@ -32,7 +32,32 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: rgb(147, 235, 235);
+}
+
+a:visited {
+  color: rgb(232, 216, 250);
+}
+
+a:hover {
+  color: rgb(147, 235, 235);
+  font-weight: bold;
+}
+
+p {
+  color: rgb(49, 181, 181);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.accent {
+  color: rgb(215, 180, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
