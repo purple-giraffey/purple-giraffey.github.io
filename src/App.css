@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(40, 44, 52);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,20 +39,23 @@
 }
 
 a {
-  color: rgb(147, 235, 235);
+  color: rgb(244, 237, 250);
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 a:visited {
-  color: rgb(232, 216, 250);
+  color: rgb(33, 143, 132);
 }
 
 a:hover {
-  color: rgb(147, 235, 235);
+  color: rgb(215, 180, 255);
+  ;
   font-weight: bold;
+  cursor: pointer;
 }
 
 p {
-  color: rgb(49, 181, 181);
+  color: rgb(244, 237, 250);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
 }
@@ -60,4 +63,87 @@ p {
 .accent {
   color: rgb(215, 180, 255);
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-btn {
+  font-size: 3em;
+  color: rgb(232, 216, 250);
+  z-index: 9001;
+  background-color: rgba(100, 100, 100, 60%);
+  border-radius: 0.1em;
+  padding: 0.1em;
+}
+
+.enter-btn:hover {
+  color: rgb(215, 180, 255);
+  box-shadow: 0px 0px 0.3em 0.15em rgba(215, 180, 255, 0.4);
+}
+
+.Invitation {
+  background-image: url("./assets/lunar-tear-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-animation: myfirst 2s;
+  /* Chrome, Safari, Opera */
+  animation: myfirst 2s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.invitation-frame {
+  border: 0.5em;
+  height: auto;
+  width: auto;
+  padding: 3%;
+  background-color: rgba(40, 44, 52, 95%);
+  outline: 0.15em solid white;
+  outline-offset: -0.75em;
+}
+
+.mute-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

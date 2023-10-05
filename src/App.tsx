@@ -9,6 +9,7 @@ function App() {
   const guestId = queryParams.get("guest_id")
 
   const [guest, setGuest] = useState(null as Guest | null)
+  const [audio, _] = useState(new Audio(require('./assets/celebrate.mp3')))
 
   useEffect(() => {
     async function fetchGuest() {
@@ -20,13 +21,15 @@ function App() {
 
   const [hasEntered, setEnter] = useState(false);
 
+
+
   return (
     <div className="App">
       <header className="App-header">
 
         {!hasEntered ?
-          <Welcome isGuest={guest ? true : false} onEnter={() => setEnter(true)} />
-          : <>{guest ? <Invitation {...guest} /> : null}</>
+          <Welcome isGuest={guest ? true : false} onEnter={() => { setEnter(true); audio.play() }} />
+          : <>{guest ? <Invitation guest={guest} audio={audio} /> : null}</>
 
         }
 
