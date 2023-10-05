@@ -1,19 +1,22 @@
+import * as guestList from './assets/guest-list.json'
+
 export type Guest = {
     displayName: string,
     isKafana: boolean,
+    isZhurka: boolean,
     fullNames?: string[]
 }
 
+export type GuestList = { [uuid: string]: Guest }
 
-export const GUESTS: { [uuid: string]: Guest } = {
-    "1": { displayName: 'Marina', isKafana: true },
-    "2": { displayName: 'Newk', isKafana: true },
-    "3": { displayName: 'Abed & Giraffe', isKafana: false, fullNames: ["Abed Machkovich", "Thomas Girafferson"] },
+export function getGuests(): GuestList {
+    return JSON.parse(JSON.stringify(guestList))
 }
 
 export function getGuest(uuid: string | null): Guest | null {
-    if (uuid && uuid in GUESTS) {
-        return GUESTS[uuid]
+    const guestList = getGuests()
+    if (uuid && uuid in guestList) {
+        return guestList[uuid]
     } else {
         return null
     }

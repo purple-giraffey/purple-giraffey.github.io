@@ -1,0 +1,28 @@
+{
+    "954cfb7f-6dd4-4d35-a76c-8ecff05c8d0d": {
+        "displayName": "Abed & Guest",
+        "isKafana": false,
+        "isZhurka": true,
+        "fullNames": [
+            "Abed",
+            "Guest"
+        ]
+    },
+    "577cb566-23a5-4b1d-93f2-3bacd030302c": {
+        "displayName": "Mar & Newk",
+        "isKafana": true,
+        "isZhurka": true,
+        "fullNames": [
+            "Marina",
+            "Nikola"
+        ]
+    },
+    "3b95a93c-a571-401a-b639-79b3eeb8bd94": {
+        "displayName": "Klime",
+        "isKafana": true,
+        "isZhurka": false,
+        "fullNames": [
+            "Lemon Plant"
+        ]
+    }
+}

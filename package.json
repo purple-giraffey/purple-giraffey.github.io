@@ -44,6 +44,12 @@
     ]
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.4",
     "gh-pages": "^6.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
