@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/wedding-invite/static/css/main.c4969603.css",
-    "main.js": "/wedding-invite/static/js/main.cd17bec5.js",
+    "main.css": "/wedding-invite/static/css/main.053890df.css",
+    "main.js": "/wedding-invite/static/js/main.ed4f420b.js",
     "static/js/787.ecf9c196.chunk.js": "/wedding-invite/static/js/787.ecf9c196.chunk.js",
+    "static/media/celebrate.mp3": "/wedding-invite/static/media/celebrate.633153fd61be5eab840f.mp3",
+    "static/media/lunar-tear-background.jpg": "/wedding-invite/static/media/lunar-tear-background.1d3853611393ff130e1f.jpg",
     "static/media/lunar-tear-loading.png": "/wedding-invite/static/media/lunar-tear-loading.c95ebf27057a97088245.png",
+    "static/media/mute.svg": "/wedding-invite/static/media/mute.9ab13559521dd42ca24854e58ddf3c86.svg",
     "index.html": "/wedding-invite/index.html",
-    "main.c4969603.css.map": "/wedding-invite/static/css/main.c4969603.css.map",
-    "main.cd17bec5.js.map": "/wedding-invite/static/js/main.cd17bec5.js.map",
+    "main.053890df.css.map": "/wedding-invite/static/css/main.053890df.css.map",
+    "main.ed4f420b.js.map": "/wedding-invite/static/js/main.ed4f420b.js.map",
     "787.ecf9c196.chunk.js.map": "/wedding-invite/static/js/787.ecf9c196.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4969603.css",
-    "static/js/main.cd17bec5.js"
+    "static/css/main.053890df.css",
+    "static/js/main.ed4f420b.js"
   ]
 }
