@@ -1,5 +1,3 @@
-import * as guestList from './assets/guest-list.json'
-
 export type Guest = {
     displayName: string,
     isKafana: boolean,
@@ -7,17 +5,13 @@ export type Guest = {
     fullNames?: string[]
 }
 
-export type GuestList = { [uuid: string]: Guest }
-
-export function getGuests(): GuestList {
-    return JSON.parse(JSON.stringify(guestList))
-}
-
-export function getGuest(uuid: string | null): Guest | null {
-    const guestList = getGuests()
-    if (uuid && uuid in guestList) {
-        return guestList[uuid]
-    } else {
-        return null
+export async function getGuest(uuid: string | null): Promise<Guest | null> {
+    try {
+        const guest = (await fetch(`https://zvp2wtmg6szhepqlwpcv4rv5me0zqkzw.lambda-url.eu-central-1.on.aws/?uuid=${uuid}`)).json()
+        return guest
+    }
+    catch (e) {
+        console.log(e)
+        throw e
     }
 }
