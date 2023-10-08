@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import './global.css'
 import { Guest, getGuest } from './guests';
 import Invitation from './Invitation';
 import Welcome from './Welcome';
@@ -28,7 +29,7 @@ function App() {
       <header className="App-header">
 
         {!hasEntered ?
-          <Welcome isGuest={guest ? true : false} onEnter={() => { setEnter(true); audio.play() }} />
+          <Welcome isGuest={guest ? true : false} onEnter={() => { setEnter(true) }} />
           : <>{guest ? <Invitation guest={guest} audio={audio} /> : null}</>
 
         }

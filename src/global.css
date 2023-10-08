@@ -1,0 +1,21 @@
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+    width: .25em;
+    height: .25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(94, 94, 94, .7);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(244, 237, 250, .7);
+    border-radius: .05em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(215, 180, 255, .7);
+}

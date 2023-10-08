@@ -12,6 +12,6 @@ export async function getGuest(uuid: string | null): Promise<Guest | null> {
     }
     catch (e) {
         console.log(e)
-        throw e
+        return null
     }
 }
