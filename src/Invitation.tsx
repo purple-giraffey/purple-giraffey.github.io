@@ -30,6 +30,8 @@ function Invitation(props: { guest: Guest, audio: any }) {
 
     function exitMenu() { setMenuView(false) }
 
+    const addToCalendarLink = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBoNmFkaGw2NWo2NmI5bGNoajZhYjlrYzRzajRiOW82MWlqOGI5aDZwZ21jY3BqNjVpbWFjcjZjNCBwdXJwbGUuZ2lyYWZmZXlAbQ&tmsrc=purple.giraffey%40gmail.com"
+
     return (
         isMenuView && SHOW_MENU ? <Menu goBack={() => exitMenu()} /> :
             <div className="Invitation">
@@ -52,7 +54,9 @@ function Invitation(props: { guest: Guest, audio: any }) {
                             </p>
                             <div>
                                 {props.guest?.isKafana ? <p><b className='accent'>14:00 </b>Ruchek & matichno @<a href={'https://mk.wikipedia.org/wiki/%D0%9A%D0%B0%D1%84%D0%B5%D0%B0%D0%BD%D0%B0'}>kafana[TBA]</a></p> : null}
-                                {props.guest?.isZhurka ? <p><b className='accent'>19:00 </b>Zhurka @<a href={'https://maps.app.goo.gl/2fh6s33rabbvTAsB6'}>Groovelyn</a>{SHOW_MENU && "*"}</p> : null}
+                                {props.guest?.isZhurka ?
+                                    <p><b className='accent'>19:00 </b>Zhurka @<a href={'https://maps.app.goo.gl/2fh6s33rabbvTAsB6'}>Groovelyn</a>{SHOW_MENU && "*"} <a target="_blank" href={addToCalendarLink}><img className={'calendar-img'} width={'20em'} height={'20em'} src={require('./assets/calendar.png')} alt={'Add to Google Calendar'} /></a>
+                                    </p> : null}
                             </div>
                             <p>See you there!</p>
                             <h3 className='accent'>♡</h3>
