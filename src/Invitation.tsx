@@ -30,7 +30,7 @@ function Invitation(props: { guest: Guest, audio: any }) {
 
     function exitMenu() { setMenuView(false) }
 
-    const addToCalendarLink = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBoNmFkaGw2NWo2NmI5bGNoajZhYjlrYzRzajRiOW82MWlqOGI5aDZwZ21jY3BqNjVpbWFjcjZjNCBwdXJwbGUuZ2lyYWZmZXlAbQ&tmsrc=purple.giraffey%40gmail.com"
+    const addToCalendarLink = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBoNmFkaGw2NWo2NmI5bGNoajZhYjlrYzRzajRiOW82MWlqOGI5aDZwZ21jY3BqNjVpbWFjcjZjNCA2YjE2NzAyZmJiZWM2MGVlMTdiYjU2NDc2MWI2Nzc0OWNkODI2YWQ1MGEyOTkyZjBiNTk0OTc4MGZmNzg4ZTA3QGc&tmsrc=6b16702fbbec60ee17bb564761b67749cd826ad50a2992f0b5949780ff788e07%40group.calendar.google.com"
 
     return (
         isMenuView && SHOW_MENU ? <Menu goBack={() => exitMenu()} /> :
