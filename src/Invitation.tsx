@@ -9,9 +9,8 @@ import { Guest } from './guests';
 import Menu from './Menu';
 import { MENU_TYPE } from './Menu'
 
-const SHOW_MENU_ZHURKA = false
-const SHOW_MENU_KAFANA = false
-
+const SHOW_MENU_ZHURKA = true
+const SHOW_MENU_KAFANA = true
 
 
 function Invitation(props: { guest: Guest, audio: any }) {
@@ -37,8 +36,8 @@ function Invitation(props: { guest: Guest, audio: any }) {
     const addToCalendarLink = "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NnBoNmFkaGw2NWo2NmI5bGNoajZhYjlrYzRzajRiOW82MWlqOGI5aDZwZ21jY3BqNjVpbWFjcjZjNCA2YjE2NzAyZmJiZWM2MGVlMTdiYjU2NDc2MWI2Nzc0OWNkODI2YWQ1MGEyOTkyZjBiNTk0OTc4MGZmNzg4ZTA3QGc&tmsrc=6b16702fbbec60ee17bb564761b67749cd826ad50a2992f0b5949780ff788e07%40group.calendar.google.com"
 
     return (
-        isMenuView == MENU_TYPE.ZHURKA && SHOW_MENU_ZHURKA ? <Menu goBack={() => exitMenu()} menu={MENU_TYPE.ZHURKA} /> :
-            isMenuView == MENU_TYPE.KAFANA && SHOW_MENU_KAFANA ? <Menu goBack={() => exitMenu()} menu={MENU_TYPE.KAFANA} /> :
+        isMenuView === MENU_TYPE.ZHURKA && SHOW_MENU_ZHURKA ? <Menu goBack={() => exitMenu()} menu={MENU_TYPE.ZHURKA} /> :
+            isMenuView === MENU_TYPE.KAFANA && SHOW_MENU_KAFANA ? <Menu goBack={() => exitMenu()} menu={MENU_TYPE.KAFANA} /> :
                 <div className="Invitation">
                     {isAudioOn ?
                         <button className='mute-btn' onClick={() => toggleAudio()}><MuteIcon /></button>
