@@ -2,7 +2,8 @@ export type Guest = {
     displayName: string,
     isKafana: boolean,
     isZhurka: boolean,
-    fullNames?: string[]
+    fullNames?: string[],
+    photo_album?: string
 }
 
 export async function getGuest(uuid: string | null): Promise<Guest | null> {

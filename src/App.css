@@ -182,3 +182,12 @@ ul {
   top: 0;
   right: 0;
 }
+
+.album-text {
+  margin: 1em;
+  padding: 1em;
+  color: rgb(244, 237, 250);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: solid 0.05em rgb(244, 237, 250);
+  max-width: 60vw;
+}
